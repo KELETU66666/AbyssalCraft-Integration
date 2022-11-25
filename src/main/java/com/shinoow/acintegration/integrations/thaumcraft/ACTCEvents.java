@@ -124,9 +124,7 @@ public class ACTCEvents {
 	@SubscribeEvent
 	public void registerAspects(AspectRegistryEvent event) {
 		//Aspects, blocks
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 0), new AspectList().add(Aspect.EARTH, 2).add(Aspect.DARKNESS, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.darkstone_brick), new AspectList().add(Aspect.EARTH, 2).add(Aspect.DARKNESS, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.cobblestone, 1, 0), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(Aspect.DARKNESS, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssalnite_ore), new AspectList().add(Aspect.METAL, 3).add(Aspect.EARTH, 1).add(Aspect.DARKNESS, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.dreadlands_abyssalnite_ore), new AspectList().add(Aspect.METAL, 3).add(Aspect.EARTH, 1).add(Aspect.DARKNESS, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.dreaded_abyssalnite_ore), new AspectList().add(Aspect.METAL, 3).add(Aspect.EARTH, 1).add(Aspect.DARKNESS, 1).add(ACTCMisc.DREAD, 1));
@@ -135,41 +133,18 @@ public class ACTCEvents {
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_coralium_ore), new AspectList().add(Aspect.CRYSTAL, 2).add(Aspect.EARTH, 1).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.liquified_coralium_ore), new AspectList().add(Aspect.METAL, 3).add(Aspect.EARTH, 1).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.pearlescent_coralium_ore), new AspectList().add(Aspect.CRYSTAL, 2).add(Aspect.EARTH, 1).add(ACTCMisc.CORALIUM, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 1), new AspectList().add(Aspect.EARTH, 2).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_stone_brick), new AspectList().add(Aspect.EARTH, 2).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_stone_button), new AspectList().add(Aspect.MECHANISM, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_gateway), new AspectList().add(Aspect.DARKNESS, 4).add(Aspect.UNDEAD, 1).add(Aspect.MOTION, 4));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.dreaded_gateway), new AspectList().add(Aspect.DARKNESS, 4).add(ACTCMisc.DREAD, 1).add(Aspect.MOTION, 4));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.omothol_gateway), new AspectList().add(Aspect.DARKNESS, 4).add(Aspect.ELDRITCH, 1).add(Aspect.MOTION, 4));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 2), new AspectList().add(Aspect.EARTH, 2).add(ACTCMisc.DREAD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 3), new AspectList().add(Aspect.EARTH, 2));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.liquid_coralium), new AspectList().add(Aspect.WATER, 3).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.liquid_antimatter), new AspectList().add(Aspect.WATER, 3).add(Aspect.VOID, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 5), new AspectList().add(Aspect.SOUL, 2).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.ethaxium_brick, 1, 0), new AspectList().add(Aspect.SOUL, 3).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.ethaxium_brick, 1, 1), new AspectList().add(Aspect.SOUL, 3).add(Aspect.ELDRITCH, 2));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 6), new AspectList().add(Aspect.EARTH, 2).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 4), new AspectList().add(Aspect.EARTH, 2).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.dreadlands_infused_powerstone), new AspectList().add(Aspect.EARTH, 2).add(Aspect.ENERGY, 2).add(ACTCMisc.DREAD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.stone, 1, 7), new AspectList().add(Aspect.EARTH, 2).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.shoggoth_ooze), new AspectList().add(Aspect.EARTH, 1).add(Aspect.LIFE, 1).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.shoggoth_biomass), new AspectList().add(Aspect.EARTH, 1).add(Aspect.LIFE, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 0), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 1), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 2), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 3), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 4), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 5), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.statue, 1, 6), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.energy_pedestal), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.monolith_pillar), new AspectList().add(Aspect.EARTH, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.sacrificial_altar), new AspectList().add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1).add(Aspect.DEATH, 1).add(Aspect.EXCHANGE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.tiered_energy_pedestal, 1, OreDictionary.WILDCARD_VALUE), new AspectList().add(Aspect.ENERGY, 2).add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.tiered_sacrificial_altar, 1, OreDictionary.WILDCARD_VALUE), new AspectList().add(Aspect.MAN, 1).add(Aspect.ELDRITCH, 1).add(Aspect.DEATH, 1).add(Aspect.EXCHANGE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.cobblestone, 1, 1), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(ACTCMisc.CORALIUM, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.cobblestone, 1, 2), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(ACTCMisc.DREAD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.cobblestone, 1, 3), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.cobblestone, 1, 4), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_sand), new AspectList().add(Aspect.EARTH, 1).add(Aspect.ENTROPY, 1).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.fused_abyssal_sand), new AspectList().add(Aspect.EARTH, 1).add(Aspect.PLANT, 1).add(ACTCMisc.CORALIUM, 1));
 		event.register.registerObjectTag(new ItemStack(ACBlocks.abyssal_sand_glass), new AspectList().add(Aspect.CRYSTAL, 1).add(ACTCMisc.CORALIUM, 1));
@@ -274,31 +249,6 @@ public class ACTCEvents {
 		event.register.registerObjectTag(new ItemStack(ACItems.crystal_shard, 1, 22), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
 		event.register.registerObjectTag(new ItemStack(ACItems.crystal_shard, 1, 23), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
 		event.register.registerObjectTag(new ItemStack(ACItems.crystal_shard, 1, 24), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 0), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 1), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 2), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.FIRE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 3), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.FIRE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 4), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.AIR, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 5), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.FIRE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 6), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.COLD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 7), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.LIFE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 8), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 9), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.COLD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 10), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.FIRE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 11), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.MECHANISM, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 12), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 13), new AspectList().add(Aspect.CRYSTAL, 3).add(ACTCMisc.CORALIUM, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 14), new AspectList().add(Aspect.CRYSTAL, 3).add(ACTCMisc.DREAD, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster, 1, 15), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.FIRE, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 0), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 1), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 2), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 3), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 4), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 5), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 6), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 7), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
-		event.register.registerObjectTag(new ItemStack(ACBlocks.crystal_cluster2, 1, 8), new AspectList().add(Aspect.CRYSTAL, 3).add(Aspect.METAL, 1));
 
 		//Aspect, entities
 		ThaumcraftApi.registerEntityTag(getMobName(ACEntities.depths_ghoul), new AspectList().add(Aspect.UNDEAD, 6).add(Aspect.DEATH, 1).add(Aspect.EARTH, 2).add(ACTCMisc.CORALIUM, 1));
